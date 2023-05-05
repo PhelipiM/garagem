@@ -4,24 +4,39 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('garagem', '0002_categoria'),
+        ("garagem", "0002_categoria"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Acessorio',
+            name="Acessorio",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('descricao', models.CharField(max_length=100)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("descricao", models.CharField(max_length=100)),
             ],
         ),
         migrations.CreateModel(
-            name='Cor',
+            name="Cor",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('descricao', models.CharField(max_length=100)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("descricao", models.CharField(max_length=100)),
             ],
         ),
     ]

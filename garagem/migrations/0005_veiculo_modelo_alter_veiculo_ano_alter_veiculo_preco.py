@@ -4,26 +4,27 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('garagem', '0004_alter_cor_options_veiculo'),
+        ("garagem", "0004_alter_cor_options_veiculo"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='veiculo',
-            name='modelo',
+            model_name="veiculo",
+            name="modelo",
             field=models.CharField(default=1, max_length=50),
             preserve_default=False,
         ),
         migrations.AlterField(
-            model_name='veiculo',
-            name='ano',
+            model_name="veiculo",
+            name="ano",
             field=models.IntegerField(default=0, null=True),
         ),
         migrations.AlterField(
-            model_name='veiculo',
-            name='preco',
-            field=models.DecimalField(decimal_places=2, default=0, max_digits=10, null=True),
+            model_name="veiculo",
+            name="preco",
+            field=models.DecimalField(
+                decimal_places=2, default=0, max_digits=10, null=True
+            ),
         ),
     ]
