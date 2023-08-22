@@ -6,6 +6,7 @@ class Modelo(models.Model):
     nome = models.CharField(max_length=150, default= "")
     marca = models.ForeignKey(Marca, on_delete=models.PROTECT, related_name="modelos")
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT, related_name="modelos")
+    
 
 
     def __str__(self):
