@@ -1,15 +1,10 @@
 from django.shortcuts import render
 
-from garagem.models import Veiculo
-
 from rest_framework.viewsets import ModelViewSet
 
-from garagem.serializers import (
+from garagem.models import Veiculo
+from garagem.serializers import VeiculoSerializer, VeiculoDetailSerializer, VeiculoListSerializer
 
-    VeiculoSerializer,
-    VeiculoDetailSerializer,
-    VeiculoListSerializer,
-)
 
 class VeiculoViewSet(ModelViewSet):
     queryset = Veiculo.objects.all()

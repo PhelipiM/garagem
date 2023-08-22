@@ -1,3 +1,4 @@
+from .modelo import Modelo
 from .marca import Marca
 from .acessorio import Acessorio
 from .cor import Cor

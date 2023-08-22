@@ -1,8 +1,8 @@
 from rest_framework.serializers import ModelSerializer
 
-from garagem.models import acessorio
+from garagem.models import Acessorio
 
 class AcessorioSerializer(ModelSerializer):
     class Meta:
-        model = acessorio
+        model = Acessorio
         fields = "__all__"
